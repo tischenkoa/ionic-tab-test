@@ -1,0 +1,28 @@
+<ion-view view-title="Login">
+  <ion-content>
+    <form name="loginForm">
+      <div class="list">
+        <p>admin</p>
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="login" name="username" required>
+        </label>
+        <p>admin</p>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="password"  name="password" required>
+        </label>
+      </div>
+      <div class="padding">
+        <p ng-if="errorPassword">* Username or Password error</p>
+        <p ng-show="loginForm.username.$error.required">* Username required</p>
+        <p ng-show="loginForm.password.$error.required">* Password required</p>
+      </div>
+      <div class="padding">
+        <button class="button button-balanced" ng-click="checkLogin(login, password)" ng-disabled="loginForm.$invalid">
+          Login
+        </button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
