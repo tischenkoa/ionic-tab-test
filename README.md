@@ -1,8 +1,11 @@
 # ionic-tab-test
 
-install  - npm i
-           bower install
+install  
+>1. npm i
+>2. bower install
            
-start    - ionic serve
+start    
+>ionic serve
 
-test     - karma start
+test     
+>karma start

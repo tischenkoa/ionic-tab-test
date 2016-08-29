@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers')
   .controller('loginCtrl', function ($scope, $state, $timeout, AuthorizationService) {
       $scope.checkLogin = function (login, password) {
         console.log(login, password);
